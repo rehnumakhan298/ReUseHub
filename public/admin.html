@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Admin dashboard</h1>
+        <p class="page-intro">Moderation tools. Every action is checked again on the server.</p>
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab" role="tab" data-view="overview" aria-selected="true">Overview</button>
+          <button type="button" class="tab" role="tab" data-view="users" aria-selected="false">Users</button>
+          <button type="button" class="tab" role="tab" data-view="items" aria-selected="false">Listings</button>
+          <button type="button" class="tab" role="tab" data-view="reports" aria-selected="false">Reports</button>
+          <button type="button" class="tab" role="tab" data-view="requests" aria-selected="false">Requests</button>
+        </div>
+        <div id="admin-panel"><p class="message">Loading...</p></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

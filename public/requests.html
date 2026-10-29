@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requests - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Requests</h1>
+        <p class="page-intro">Incoming requests are for items you listed. Outgoing requests are items you asked for. Owners accept, reject or complete requests; requesters can cancel.</p>
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab" role="tab" data-box="incoming" aria-selected="true">Incoming</button>
+          <button type="button" class="tab" role="tab" data-box="outgoing" aria-selected="false">Outgoing</button>
+        </div>
+        <div id="request-list"><p class="message">Loading requests...</p></div>
+        <p class="note">Chat messages refresh every few seconds while a chat is open. Do not share passwords or financial details in chat.</p>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/requests.js"></script>
+</body>
+</html>

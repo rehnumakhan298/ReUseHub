@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List an Item - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container-narrow">
+        <h1 class="page-title" id="form-title">List an item</h1>
+        <p class="page-intro">Listing as <strong id="owner-name">...</strong>. Your name is shown to other students; your email is never shown.</p>
+        <div id="form-message" class="hidden" role="alert"></div>
+        <form id="item-form" class="form-card" novalidate>
+          <div class="form-group"><label for="name">Item name</label><input type="text" id="name" maxlength="120" required></div>
+          <div class="form-row">
+            <div class="form-group"><label for="category">Category</label>
+              <select id="category" required><option value="">Choose...</option><option>Books</option><option>Stationery</option><option>Lab Essentials</option><option>Other</option></select></div>
+            <div class="form-group"><label for="condition">Condition</label>
+              <select id="condition" required><option value="">Choose...</option><option>New</option><option>Like New</option><option>Good</option><option>Fair</option></select></div>
+          </div>
+          <div class="form-group"><label for="description">Description</label><textarea id="description" maxlength="1000" required></textarea>
+            <div class="hint">At least 10 characters. Mention edition, size or any wear.</div></div>
+          <div class="form-row">
+            <div class="form-group"><label for="listingType">Listing type</label>
+              <select id="listingType" required><option value="">Choose...</option><option>Give Away</option><option>Exchange</option><option>Sell</option></select></div>
+            <div class="form-group hidden" id="price-group"><label for="price">Price in Rs. (optional)</label><input type="number" id="price" min="0" max="100000" step="0.01">
+              <div class="hint">Leave empty to let buyers ask you.</div></div>
+          </div>
+          <div class="form-group"><label for="imageUrl">Image URL (optional)</label><input type="url" id="imageUrl" maxlength="500" placeholder="https://...">
+            <div class="hint">If the image cannot load, a placeholder is shown instead.</div></div>
+          <button type="submit" class="btn btn-primary">Add listing</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/add-item.js"></script>
+</body>
+</html>

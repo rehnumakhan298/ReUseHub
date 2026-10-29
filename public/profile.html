@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">My profile</h1>
+        <div class="grid stats-grid">
+          <div class="card counter"><div class="number" id="stat-listings">-</div><div class="label">Active listings</div></div>
+          <div class="card counter"><div class="number" id="stat-sent">-</div><div class="label">Requests sent</div></div>
+          <div class="card counter"><div class="number" id="stat-received">-</div><div class="label">Requests received</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-flush">
+      <div class="container-narrow">
+        <div id="profile-message" class="hidden" role="alert"></div>
+        <form id="profile-form" class="form-card" novalidate>
+          <p>Email: <strong id="profile-email">-</strong> (cannot be changed) &middot; Member since <span id="profile-since">-</span></p>
+          <div class="form-group"><label for="fullName">Full name</label><input type="text" id="fullName" maxlength="100"></div>
+          <div class="form-group"><label for="department">Department</label><input type="text" id="department" maxlength="100"></div>
+          <h2>Change password (optional)</h2>
+          <div class="form-group"><label for="currentPassword">Current password</label><input type="password" id="currentPassword" autocomplete="current-password"></div>
+          <div class="form-group"><label for="newPassword">New password</label><input type="password" id="newPassword" autocomplete="new-password"></div>
+          <button type="submit" class="btn btn-primary">Save profile</button>
+        </form>
+      </div>
+    </section>
+    <section class="section section-flush">
+      <div class="container">
+        <h2 class="section-title">My listings</h2>
+        <div id="my-listings" class="grid"><p class="message">Loading your listings...</p></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

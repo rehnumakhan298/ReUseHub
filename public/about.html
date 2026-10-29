@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">About ReUseHub</h1>
+        <p class="page-intro">Exchange More, Waste Less.</p>
+        <div class="about-block"><h2>The problem</h2>
+          <p>Every semester, students buy textbooks, calculators, lab coats and stationery that seniors and classmates no longer need. Useful items sit unused or are thrown away, while other students spend money they could save.</p></div>
+        <div class="about-block"><h2>Our solution</h2>
+          <p>ReUseHub is a campus listing board. Students list items to give away, exchange or sell, browse what others have listed, and send a request. Owners accept, chat and mark the exchange completed, and the item then disappears from the available list.</p></div>
+        <div class="about-block"><h2>Sustainability purpose</h2>
+          <p>Reusing an item means one fewer new item needs to be made. We do not publish estimated carbon or waste savings, because we do not have reliable data for that. The home page only shows counts taken directly from the database, and sample data is labelled as sample.</p></div>
+        <div class="about-block"><h2>Prototype limitations</h2>
+          <ul>
+            <li>Email addresses are not verified, so an account does not prove someone belongs to the college.</li>
+            <li>Sessions are kept in server memory, so everyone is logged out when the server restarts.</li>
+            <li>Chat refreshes every few seconds rather than instantly, and messages are not moderated automatically.</li>
+            <li>Payments are not handled. Any sale is arranged directly between students.</li>
+          </ul></div>
+        <div class="about-block"><h2>Planned improvements</h2>
+          <ul>
+            <li>College email verification and password reset.</li>
+            <li>Image uploads instead of image links.</li>
+            <li>Real-time chat and notifications.</li>
+            <li>Production hosting with HTTPS and a persistent session store.</li>
+          </ul></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

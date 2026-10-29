@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Items - ReUseHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Browse Items</h1>
+        <p class="page-intro">Available items listed by students. Anyone can browse; log in to send a request.</p>
+        <form id="filter-form" class="filters" role="search">
+          <div class="form-group"><label for="search">Search</label><input type="text" id="search" placeholder="Name or description" maxlength="100"></div>
+          <div class="form-group"><label for="category">Category</label>
+            <select id="category"><option value="">All</option><option>Books</option><option>Stationery</option><option>Lab Essentials</option><option>Other</option></select></div>
+          <div class="form-group"><label for="condition">Condition</label>
+            <select id="condition"><option value="">Any</option><option>New</option><option>Like New</option><option>Good</option><option>Fair</option></select></div>
+          <div class="form-group"><label for="type">Listing type</label>
+            <select id="type"><option value="">Any</option><option>Give Away</option><option>Exchange</option><option>Sell</option></select></div>
+          <button type="button" id="clear-filters" class="btn btn-light">Clear</button>
+        </form>
+        <p class="note" id="result-count" aria-live="polite"></p>
+        <div id="results" class="grid"><p class="message">Loading items...</p></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/browse.js"></script>
+</body>
+</html>

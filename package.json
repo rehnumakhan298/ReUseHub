@@ -1,0 +1,20 @@
+{
+  "name": "reusehub",
+  "version": "2.0.0",
+  "description": "ReUseHub - Exchange More, Waste Less. College item reuse platform (DevFusion hackathon).",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "setup": "node scripts/setup.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7"
+  }
+}

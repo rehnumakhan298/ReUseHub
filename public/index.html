@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReUseHub - Exchange More, Waste Less</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Exchange More, Waste Less</h1>
+        <p>ReUseHub helps students pass on textbooks, notes, calculators, lab coats and other college essentials instead of buying everything new.</p>
+        <div class="hero-buttons">
+          <a href="browse.html" class="btn btn-primary">Browse Items</a>
+          <a href="add-item.html" class="btn btn-outline">List an Item</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Items</h2>
+        <div id="featured-items" class="grid"><p class="message">Loading items...</p></div>
+      </div>
+    </section>
+
+    <section class="section section-flush">
+      <div class="container">
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="grid">
+          <a class="card category-card" href="browse.html?category=Books">Books</a>
+          <a class="card category-card" href="browse.html?category=Stationery">Stationery</a>
+          <a class="card category-card" href="browse.html?category=Lab%20Essentials">Lab Essentials</a>
+          <a class="card category-card" href="browse.html?category=Other">Other</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-flush">
+      <div class="container">
+        <h2 class="section-title">Reuse Impact</h2>
+        <div class="grid">
+          <div class="card counter"><div class="number" id="count-completed">-</div><div class="label">Completed exchanges</div></div>
+          <div class="card counter"><div class="number" id="count-student">-</div><div class="label">Student listings</div></div>
+          <div class="card counter"><div class="number" id="count-sample">-</div><div class="label">Sample listings (demo data)</div></div>
+          <div class="card counter"><div class="number" id="count-available">-</div><div class="label">Items available now</div></div>
+          <div class="card counter"><div class="number" id="count-students">-</div><div class="label">Registered students</div></div>
+        </div>
+        <p class="note">All counts are calculated from the database. Sample listings are demo data and are never counted as completed exchanges.</p>
+      </div>
+    </section>
+
+    <section class="section section-flush">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="grid">
+          <div class="card step"><div class="step-number">1</div><h3>List</h3><p>Register, then add an item you no longer need with a short description.</p></div>
+          <div class="card step"><div class="step-number">2</div><h3>Discover</h3><p>Search and filter items listed by other students.</p></div>
+          <div class="card step"><div class="step-number">3</div><h3>Request</h3><p>Send a request, chat with the owner and track its status.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
